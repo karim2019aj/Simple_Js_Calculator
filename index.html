@@ -1,0 +1,45 @@
+
+
+<html>
+    <head>
+        <title>simple js calculator</title>
+        <link href="style.css"  rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculator">
+
+            <input id="output" type="text" class="calculator-screen" value="0" disabled />
+            
+            <div class="calculator-keys">
+              
+              <button onclick="getOperator(this)" type="button" class="operator" value="+">+</button>
+              <button onclick="getOperator(this)" type="button" class="operator" value="-">-</button>
+              <button onclick="getOperator(this)" type="button" class="operator" value="*">&times;</button>
+              <button onclick="getOperator(this)" type="button" class="operator" value="/">&divide;</button>
+          
+              <button onclick="getNumber(this)" type="button" value="7">7</button>
+              <button onclick="getNumber(this)" type="button" value="8">8</button>
+              <button onclick="getNumber(this)"type="button" value="9">9</button>
+          
+          
+              <button onclick="getNumber(this)" type="button" value="4">4</button>
+              <button onclick="getNumber(this)" type="button" value="5">5</button>
+              <button onclick="getNumber(this)" type="button" value="6">6</button>
+          
+          
+              <button onclick="getNumber(this)" type="button" value="1">1</button>
+              <button onclick="getNumber(this)" type="button" value="2">2</button>
+              <button onclick="getNumber(this)" type="button" value="3">3</button>
+          
+          
+              <button onclick="getNumber(this)" type="button" value="0">0</button>
+              <button onclick="getNumber(this)" type="button" class="decimal" value=".">.</button>
+              <button onclick="initToZero()" type="button" class="all-clear" value="all-clear">AC</button>
+          
+              <button onclick="claculate()" type="button" class="equal-sign" value="=">=</button>
+          
+            </div>
+          </div>
+    </body>
+    <script src="script.js"></script>
+</html>
